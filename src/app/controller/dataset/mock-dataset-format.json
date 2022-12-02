@@ -1,0 +1,12 @@
+{
+    "Asthma": ["Wheezing","Cough","Chest Tightness","Being too breathless to eat, speak or sleep","Breathing faster","Fast heartbeat","Drowsiness","Exhaustion","Dizziness","Confusion","Blue lips of finger","Blue lips of finger", "Fainting"],
+    "Chronic Obstructive Pulmonary Disease": ["Shortness of breath","Wheezing","Cough with mucus","Lack of energy","Weight loss", "Swelling in ankles, feet or legs"],
+    "Influenza": ["Fever","Cough","Sore throat","Runny nose","Muscle or body aches", "Headaches", "Fatigue"],
+    "Hypersensitivity Pneumonitis": ["Shortness of breath","Dry cough","Chest tightness","Chills","Fatigue", "Fever"],
+    "Chronic Bronchitis": ["Cough with mucus","Wheezing","Chest tightness","Shortness of breath","Fatigue"],
+    "Emphysema" :["Frequent coughing","Cough with mucus","Shortness of breath","squeaky sound when you breathe","Chest tightness"],
+    "Pulmonary Fibrosis": ["Shortness of breath","Dry cough","Fatigue","Weight loss","Aching muscles and joints","Widening and rounding of the tips of the finger"],
+    "Lung Cancer": ["Frequent coughing", "Coughing up blood","Shortness of breath","Chest pain","Hoarseness","Weight loss","Bone pain","Headache"],
+    "Pneumonia": ["Chest pain when you breathe or cough","Confusion","Cough with phlegm","Fatigue","Fever","Nausea","Shortness of breath"],
+    "Tuberculosis": ["Frequent coughing", "Cough with phlegm","weight loss", "night sweats", "fatigue", "loss of appetite", "swellings in the neck"]
+}

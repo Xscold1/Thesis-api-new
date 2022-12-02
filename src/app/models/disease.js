@@ -1,0 +1,31 @@
+const { DataTypes } = require("sequelize");
+const sequelize = require("../database");
+
+const Disease = sequelize.define("Disease_infomation", {
+    diseaseName:{
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    history: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+    },
+    overview: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+    },
+    treatment: {
+        type: DataTypes.TEXT,
+        allowNull: true
+    },
+    symptoms: {
+        type: DataTypes.TEXT,
+        allowNull: true
+    },
+    specialist: {
+        type: DataTypes.TEXT,
+        allowNull: true
+    },
+})
+
+module.exports = Disease;
