@@ -26,6 +26,6 @@ const Disease = sequelize.define("Disease_infomation", {
         type: DataTypes.TEXT,
         allowNull: true
     },
-})
+}, {freezeTableName: true})
 
 module.exports = Disease;

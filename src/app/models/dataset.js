@@ -28,7 +28,7 @@ const Dataset = sequelize.define("Dataset", {
         allowNull: false,
     },
 },
-    { timestamps: true, });
+    { timestamps: true, }, {freezeTableName: true});
     
 Address.hasOne(Dataset, {
     foreignKey: 'addressId'

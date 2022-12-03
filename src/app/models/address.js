@@ -44,7 +44,7 @@ const Address = sequelize.define("Address", {
         type: DataTypes.STRING,
         allowNull: true,
     },
-},{timestamps: true});
+},{timestamps: true}, {freezeTableName: true});
 
 Address.hasOne(Hospital, {
     foreignKey: 'addressId',

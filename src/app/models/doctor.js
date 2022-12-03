@@ -23,7 +23,7 @@ const Doctor = sequelize.define("Doctor", {
         type:DataTypes.STRING,
         allowNull:true
     }
-});
+}, {freezeTableName: true});
 
 module.exports = Doctor;
 

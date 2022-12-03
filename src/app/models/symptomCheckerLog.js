@@ -24,7 +24,7 @@ const SymptomCheckerLog = sequelize.define("SymptomCheckerLog", {
         type: DataTypes.TEXT,
         allowNull: true,
     }
-});
+}, {freezeTableName: true});
 
 Address.hasOne(SymptomCheckerLog, {
     foreignKey: 'addressId',

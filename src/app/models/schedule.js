@@ -11,5 +11,5 @@ const Schedule = sequelize.define('schedule',{
         type: DataTypes.STRING,
         allowNull: false
     }
-})
+}, {freezeTableName: true})
 module.exports = Schedule

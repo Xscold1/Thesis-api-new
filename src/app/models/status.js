@@ -15,7 +15,7 @@ const Status = sequelize.define("Status", {
     timestamps: false,
     // createdAt: false,
     // updatedAt: false,
-  }
+  }, {freezeTableName: true}
 );
 
 module.exports = Status;

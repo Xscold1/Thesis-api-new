@@ -28,7 +28,7 @@ const Hospital = sequelize.define("Hospital", {
         allowNull: true,
     },
 
-});
+}, {freezeTableName: true});
 
 
 

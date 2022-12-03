@@ -24,7 +24,7 @@ const Patient = sequelize.define("Patient", {
         type: DataTypes.STRING,
         allowNull:false,
     }
-})
+}, {freezeTableName: true})
 
 User.hasOne(Patient)
 Patient.belongsTo(User)

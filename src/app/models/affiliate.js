@@ -16,6 +16,8 @@ const Affiliate = sequelize.define("Affiliate", {
         type: DataTypes.STRING,
         allowNull:true,
     }
+} ,{
+    freezeTableName: true
 });
 
 

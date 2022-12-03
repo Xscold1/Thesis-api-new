@@ -11,7 +11,7 @@ const Facility = sequelize.define("facility", {
         type: DataTypes.STRING,
         allowNull: true,
     },
-}, {timestamps: false})
+}, {timestamps: false}, {freezeTableName: true})
 
 Hospital.hasMany(Facility)
 Facility.belongsTo(Hospital)
