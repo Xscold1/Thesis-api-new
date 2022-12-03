@@ -196,7 +196,7 @@ const ADMIN_DASHBOARD = async (req, res) =>{
                 }
             }
         })
-    } catch (error) {
+    } catch (err) {
         res.send({
             status:"Server Error",
             status_code:500,
