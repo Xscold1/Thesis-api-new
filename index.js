@@ -13,21 +13,15 @@ importModels(); // We just need this to create table even the models are not exp
 //   // initializedDb;
 //   next();
 // });
-
 app.all('*', (req, res, next) => {
   res.header("Access-Control-Allow-Origin", "https://lobster-app-nmiq3.ondigitalocean.app");
   next();
 });
-
 //Middlewares
 app.use(express.json());
 //app.use(cors());
 app.use(cookieParser());
-
-
-app.use(cors({origin: 'https://lobster-app-nmiq3.ondigitalocean.app'})) // Use this after the variable declaration
-
-
+app.use(cors({origin: 'https://lobster-app-nmiq3.ondigitalocean.app/'})) // Use this after the variable declaration
 // To serve the public files like images, files, etc.
 app.use(express.static("public"));
 app.use("/public", express.static(path.join(__dirname, 'public')));
