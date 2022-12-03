@@ -14,22 +14,8 @@ importModels(); // We just need this to create table even the models are not exp
 //   next();
 // });
 
-app.use(function (req, res, next) {
-
-  // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'https://lobster-app-nmiq3.ondigitalocean.app');
-
-  // Request methods you wish to allow
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
-  // Request headers you wish to allow
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-
-  // Set to true if you need the website to include cookies in the requests sent
-  // to the API (e.g. in case you use sessions)
-  res.setHeader('Access-Control-Allow-Credentials', true);
-
-  // Pass to next layer of middleware
+app.all('*', (req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://lobster-app-nmiq3.ondigitalocean.app");
   next();
 });
 
@@ -39,7 +25,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 
-app.use(cors({origin: 'https://lobster-app-nmiq3.ondigitalocean.app/'})) // Use this after the variable declaration
+app.use(cors({origin: 'https://lobster-app-nmiq3.ondigitalocean.app'})) // Use this after the variable declaration
 
 
 // To serve the public files like images, files, etc.
