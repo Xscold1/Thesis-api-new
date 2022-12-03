@@ -1,14 +1,14 @@
 const { Sequelize } = require("sequelize");
 
 const sequelize = new Sequelize(
-    'thesis-db',
-    'root',
-    'password',
+    'defaultdb',
+    'doadmin',
+    'AVNS_OzFsjlpB7HISPFCGJWa',
     {
         logging: false,
-        host: "localhost",
+        host: "thesis-db-do-user-12996373-0.b.db.ondigitalocean.com",
         dialect: "mysql",
-        //port:25060
+        port:25060
     });
 
 (async () => {
