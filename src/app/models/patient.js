@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../database");
 const User = require('./user');
 
-const Patient = sequelize.define("Patient", {
+const Patient = sequelize.define("patient", {
 
     firstName:{
         type: DataTypes.STRING,

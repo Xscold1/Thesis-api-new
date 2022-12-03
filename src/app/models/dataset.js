@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../database");
 const Address = require('./address');
 
-const Dataset = sequelize.define("Dataset", {
+const Dataset = sequelize.define("dataset", {
     status: {
         type: DataTypes.STRING,
         allowNull: false,

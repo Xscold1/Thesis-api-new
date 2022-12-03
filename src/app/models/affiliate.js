@@ -4,7 +4,7 @@ const Schedule = require("./schedule")
 const Doctor = require("./doctor")
 const Hospital = require("./hospital")
 
-const Affiliate = sequelize.define("Affiliate", {
+const Affiliate = sequelize.define("affiliate", {
     id:{
         type: DataTypes.INTEGER,
         allowNull:false,

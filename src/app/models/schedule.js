@@ -1,7 +1,7 @@
 const DataTypes = require('sequelize')
 const sequelize = require('../database/index')
 
-const Schedule = sequelize.define('schedule',{
+const Schedule = sequelize.define('chedule',{
     
     time:{
         type: DataTypes.STRING,

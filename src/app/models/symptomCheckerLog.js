@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../database");
 const Address = require('./address');
 
-const SymptomCheckerLog = sequelize.define("SymptomCheckerLog", {
+const SymptomCheckerLog = sequelize.define("symptomCheckerLog", {
     
     age: {
         type: DataTypes.INTEGER,

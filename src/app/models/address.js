@@ -2,7 +2,7 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../database");
 const Hospital = require("./hospital")
 
-const Address = sequelize.define("Address", {
+const Address = sequelize.define("address", {
     country: {
         type: DataTypes.STRING,
         allowNull: true,

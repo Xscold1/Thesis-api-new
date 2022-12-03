@@ -5,7 +5,7 @@ const Affiliate = require("./affiliate")
 const Facility = require("./affiliate")
 
 
-const Hospital = sequelize.define("Hospital", {
+const Hospital = sequelize.define("hospital", {
     overview:{
         type:DataTypes.TEXT,
         allowNull:true
